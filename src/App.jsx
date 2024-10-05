@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <ThemeProvider>
+      <ThemeProvider >
         <AllRouter/>
       </ThemeProvider>
     </>

@@ -1,9 +1,7 @@
 import Header from "../components/header";
-import { ThemeProvider } from "../context/ThemeContext";
 
 export default function Home() {
   return (
-    <ThemeProvider>
     <div className="min-h-screen bg-gray-50 dark:bg-gray-800 dark:text-white transition-colors duration-300">
       <Header/>
       <h1 className="text-3xl font-bold pt-10">Dynamic Theme Switcher</h1>
@@ -12,6 +10,5 @@ export default function Home() {
           <p className="mt-4">This is a sample application with a theme switcher.</p>
         </main>
     </div>
-    </ThemeProvider>
   )
 }
