@@ -2,9 +2,9 @@ import  { useState, useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 
 export default function CustomThemeSwitcher  () {
-  const { setTheme } = useContext(ThemeContext);
+  const { toggleTheme } = useContext(ThemeContext);
   const [customColors, setCustomColors] = useState({
-    background: "#ffffff",
+    background:"#ffffff",
     text: "#000000",
   });
 
@@ -16,8 +16,10 @@ export default function CustomThemeSwitcher  () {
   const applyCustomTheme = () => {
     document.documentElement.style.setProperty("--custom-bg-color", customColors.background);
     document.documentElement.style.setProperty("--custom-text-color", customColors.text);
-    setTheme("custom");
+    toggleTheme("custom");
   };
+
+
 
   return (
     <div className=" space-x-4 ">

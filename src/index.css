@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-theme {
+  background-color: var(--custom-bg-color);
+  color: var(--custom-text-color);
+}
